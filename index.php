@@ -21,6 +21,7 @@ if ($mode == 'next') {
     $data = fread($myfile, filesize($filename));
     fclose($myfile);
     echo '{"messages":[{"text":"'.$data.'"}], "set_attributes":{"stepnum":"'.$stepnum.'"}}';
+}
     
 if ($mode == 'back') {
     $stepnum  = --$stepnum;
