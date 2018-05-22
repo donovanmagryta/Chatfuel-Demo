@@ -29,7 +29,7 @@ if ($mode == 'back') {
     $myfile = fopen($filename, "r") or die('{"redirect_to_blocks": ["error"]}'); //read only!!!
     $data = fread($myfile, filesize($filename));
     fclose($myfile);
-     echo '{"messages":[{"text":"'.$data.'"}], "set_attributes":{"stepnum":"'.$stepnum.'"}}';
+    echo '{"messages":[{"text":"'.$data.'"}], "set_attributes":{"stepnum":"'.$stepnum.'"}}';
     
 }
 if ($mode == 'add or edit Q&A') {
